@@ -1,0 +1,9 @@
+# Teste 1: Divisão com resultado inteiro --  HEX: 0x00F00413 0x00300493 0x029445B3
+addi s0, zero, 15
+addi s1, zero, 3
+div a1, s0, s1  # Resultado esperado em a1: 5
+
+# Teste 2: Divisão com números maiores -- HEX: 0x06400413 0x01900493 0x029445B3
+addi s0, zero, 100
+addi s1, zero, 25
+div a1, s0, s1  # Resultado esperado em a1: 4

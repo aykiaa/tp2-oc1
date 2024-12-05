@@ -1,0 +1,9 @@
+# Teste 1: Multiplicação de números positivos -- HEX: 0x00500413 0x00400493 0x029405B3
+addi s0, zero, 5
+addi s1, zero, 4
+mul a1, s0, s1  # Resultado esperado em a1: 20
+
+# Teste 2: Multiplicação com zero -- HEX: 0x00700413 0x00000493 0x029405B3
+addi s0, zero, 7
+addi s1, zero, 0
+mul a1, s0, s1  # Resultado esperado em a1: 0
