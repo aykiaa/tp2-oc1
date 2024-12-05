@@ -1,0 +1,15 @@
+# Teste 1: Branch quando valores são iguais
+addi s0, zero, 10
+addi s1, zero, 10
+beq s0, s1, igual   # Deve pular para o label 'igual'
+addi a0, zero, 0    # Não executa se branch funcionar
+igual:
+addi a0, zero, 1    # Executado se branch funcionar
+
+# Teste 2: Branch quando valores são diferentes
+addi s0, zero, 5
+addi s1, zero, 7
+beq s0, s1, igual2  # Não deve pular
+addi a1, zero, 0    # Executado
+igual2:
+addi a1, zero, 1    # Não executado

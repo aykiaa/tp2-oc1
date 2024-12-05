@@ -1,0 +1,7 @@
+# Teste 1: XORI com valor imediato
+addi s0, zero, 10   # 1010 em binário
+xori a0, s0, 5      # 0101 em binário, resultado esperado: 15
+
+# Teste 2: XORI com outro valor
+addi s0, zero, 15   # 1111 em binário
+xori a1, s0, 7      # 0111 em binário, resultado esperado: 8
